@@ -1,0 +1,26 @@
+[project]
+name = "gemini-safety-guard"
+version = "0.1.0"
+description = "A lightweight safety guardrail SDK for LLMs, powered by Google Gemini"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "streamlit>=1.30.0",
+    "google-generativeai>=0.5.0",
+    "transformers>=4.40.0",
+    "torch>=2.0.0",
+    "safetensors>=0.4.0",
+]
+
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+
